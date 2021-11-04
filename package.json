@@ -1,0 +1,14 @@
+{
+  "name": "secret-santa",
+  "version": "1.0.0",
+  "description": "Secret Santa with subject of delivery",
+  "main": "index.js",
+  "scripts": {
+    "hohoho": "nodemon index.js"
+  },
+  "author": "Anna Winiarczuk",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
