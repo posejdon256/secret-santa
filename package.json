@@ -9,6 +9,7 @@
   "author": "Anna Winiarczuk",
   "license": "ISC",
   "dependencies": {
+    "nodemailer": "^6.7.0",
     "nodemon": "^2.0.14"
   }
 }
