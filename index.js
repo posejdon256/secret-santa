@@ -110,7 +110,7 @@ exports.SecretSanta = class SecretSanta {
     this.randomized.forEach((guy) => {
       sendEmail(
         `Hohoho! This is Secret Santa!`,
-        generateText(guy.name, guy.country, sender),
+        generateText(guy.name, guy.subject, sender),
         guy.email,
         sender,
         password
