@@ -29,17 +29,3 @@ $* @param {string} password - it should be your gmail password
 $*/
 $Santa.send(process.env.EMAIL, process.env.PASSWORD);
 ```
-## Example:
-```
-$const SecretSanta = require("./index.js").SecretSanta;
-$const Santa = new SecretSanta(
-$  [
-$    { name: "Ania", email: "aniutka.pop@gmail.com" },
-$    { name: "Adam", email: "adamosca@gmail.com" },
-$  ],
-$  ["cats", "dogs"]
-$);
-```
-
-$Santa.test();
-$Santa.send(process.env.EMAIL, process.env.PASSWORD);
