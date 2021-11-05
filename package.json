@@ -7,6 +7,7 @@
     "hohoho": "nodemon -r dotenv/config test.js"
   },
   "repository": "https://github.com/posejdon256/secret-santa",
+
   "author": "Anna Winiarczuk",
   "license": "ISC",
   "dependencies": {
