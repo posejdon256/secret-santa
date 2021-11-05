@@ -16,13 +16,16 @@ $   * @param {Array} _namesWithEmails
 $   * @param {Array} _subjects
 $   */
 $ const Santa = new SecretSanta( 
-$       [{name: 'Ania', email: 'ania@ania.com'}, {name: 'Adam', email: 'adam@adam.com'}],
+$       [
+$         {name: 'Ania', email: 'ania@ania.com'}, 
+$         {name: 'Adam', email: 'adam@adam.com'}
+$       ],
 $       ['Cats', 'Dogs']
 $ );
 ```
 5. Test your Santa
 ```
-$ Santa.test()
+$ **Santa.test()**
 ```
 6. Send your Santa email
 ```
