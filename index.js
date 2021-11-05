@@ -45,7 +45,7 @@ const getRandom = (min, max) => {
 
 const randomizePeopleAndSubjects = (_subjects, _people) => {
   const people = [..._people];
-  const subjects = [...subjects];
+  const subjects = [..._subjects];
   const peopleToGet = [...people];
   const donePeople = [];
   people.forEach((guy) => {
@@ -62,7 +62,7 @@ const randomizePeopleAndSubjects = (_subjects, _people) => {
     const randomGuy = peopleToGet[randomGuyIndex];
     peopleToGet.splice(randomGuyIndex, 1);
     const result = { name: randomGuy.name, email: guy.email };
-    if (subjects) {
+    if (_subjects) {
       const random = getRandom(0, subjects.length - 1);
       const subject = subjects[random];
       subjects.splice(random, 1);
@@ -79,7 +79,7 @@ exports.SecretSanta = class SecretSanta {
    * @param {Array} _subjects Example: ['Cats', 'Dogs']
    */
   constructor(_namesWithEmails = [], _subjects = undefined) {
-    if (_subjects && _subjects.length !== _namesWithEmails) {
+    if (_subjects && _subjects.length !== _namesWithEmails.length) {
       throw Error("_subjects and _namesWithEmails should have same length");
     }
     this.namesWithEmails = _namesWithEmails;
@@ -96,7 +96,7 @@ exports.SecretSanta = class SecretSanta {
     this.randomized.forEach((element) => {
       console.log(
         `From ${element.email} to ${element.name} subject ${
-          this._subjects ? element.subject : "none"
+          this.subjects ? element.subject : "none"
         }`
       );
     });
