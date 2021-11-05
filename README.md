@@ -23,8 +23,8 @@ $ Santa.test()
 ```
 6. Send your Santa email
 ```
-$  * Attention! you need to enable not safe application in your gmail account
-$ * @param {string} sender - it should be your gmail email
+$* Attention! you need to enable not safe application in your gmail account
+$* @param {string} sender - it should be your gmail email
 $* @param {string} password - it should be your gmail password
 $*/
 $Santa.send(process.env.EMAIL, process.env.PASSWORD);
