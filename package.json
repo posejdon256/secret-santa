@@ -1,0 +1,16 @@
+{
+  "name": "secret-santa",
+  "version": "1.0.0",
+  "description": "Secret Santa with subject of delivery",
+  "main": "index.js",
+  "scripts": {
+    "hohoho": "nodemon -r dotenv/config test.js"
+  },
+  "author": "Anna Winiarczuk",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "nodemailer": "^6.7.0",
+    "nodemon": "^2.0.14"
+  }
+}
