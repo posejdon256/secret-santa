@@ -2,11 +2,11 @@
 ## How to use?
 1. Install SescretSanta
 ```
-$ npm i --save secret-santa
+$ npm i --save secret-santa-subjects
 ```
 3. Import SecretSanta
 ```
-$ import { SecretSanta } from 'secret-santa';
+$ import { SecretSanta } from 'secret-santa-subjects';
 ```
 4. Create SecretSanta objet
 ```
